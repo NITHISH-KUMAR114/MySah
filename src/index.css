@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+
+.bg-primary-background {
+    background-color: #fff1f2;
+}
+
+.decorative-line {
+    background-color: color-mix(in oklab,#ffccd3 60%,transparent);
+}
+.btn {
+    background-color: #ec003f;
+    color:  white;
+}
+
+.btn:hover {
+    background-color: #c70036;
+}
