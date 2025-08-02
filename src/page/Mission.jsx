@@ -3,11 +3,7 @@ import React from 'react';
 export default function Mission() {
     return (
         <section
-            className="relative isolate overflow-hidden
-                       bg-white/90
-                       backdrop-blur-md shadow-lg ring-1 ring-rose-200/20
-                       hover:shadow-rose-300
-                       transition-all duration-300">
+            className="relative">
             {/* Subtle gradient wash */}
             <div className="absolute inset-0 -z-10
                             bg-gradient-to-br from-rose-100/60 via-white/20 to-transparent

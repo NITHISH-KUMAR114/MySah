@@ -17,11 +17,11 @@ const topServices = allServices.slice(0, 4);
 export default function ServicesPreview() {
     return (
         <section className="services-section pt-10 pb-10" id="services">
-            <div className="m-10">
+            <div className="m-5">
 
                 {/* ───────── Heading ───────── */}
                 <div className="text-center mb-10">
-                    <h2 className="font-extrabold text-3xl sm:text-4xl lg:text-5xl mb-3">
+                    <h2 className="font-extrabold text-2xl sm:text-4xl lg:text-5xl mb-3">
                         Most-Requested Services
                     </h2>
                     <p className="text-gray-600 max-w-xl mx-auto">
@@ -51,7 +51,7 @@ export default function ServicesPreview() {
                         to="/services"
                         className="
               inline-flex items-center gap-2 px-8 py-3 rounded-full font-semibold
-              btn text-white shadow-md  transition
+              btn text-white shadow-md transition duration-300
             "
                     >
                         See all services

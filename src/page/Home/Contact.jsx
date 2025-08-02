@@ -22,7 +22,7 @@ const SERVICE_OPTS = [
 
 const CONTACT_ITEMS = [
     {icon: locIco, label: 'No 13, Aranganathan subway Road, North Saidapet, Chennai – 600015', isLink: false},
-    {icon: phoneIco, label: '+919500311077', link: 'tel:+919500311077'},
+    {icon: phoneIco, label: '+91-9500311077', link: 'tel:+919500311077'},
     {icon: emailIco, label: 'contact@mysahaesthetics.com', link: 'mailto:contact@mysahaesthetics.com'},
     {icon: igIco, label: '@mysahaesthetics', link: 'https://instagram.com/mysahaesthetics'},
 ];
@@ -63,7 +63,7 @@ export default function ContactPage() {
             );
             toast.success('Appointment request sent! We will contact you shortly.', {
                 position: 'top-center',
-                autoClose: 3000,
+                autoClose: 300000,
                 style: {whiteSpace: 'nowrap', width: "auto"},
             });
             formRef.current.reset();
@@ -173,7 +173,7 @@ export default function ContactPage() {
                                 <button
                                     type="submit"
                                     disabled={loading}
-                                    className={`w-full rounded-full font-semibold px-8 py-3 shadow-md transition
+                                    className={`w-full rounded-full font-semibold px-8 py-3 shadow-md transition btn
                                         ${loading ? 'bg-rose-300 cursor-not-allowed' : 'hover:cursor-pointer'}
                                       `}
                                 >

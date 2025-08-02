@@ -72,12 +72,12 @@ export default function Services() {
 
             {/* ===== Banner ===== */}
             <section
-                className="relative flex min-h-screen lg:min-h-[85vh] bg-center bg-cover top-3 items-center justify-center text-center"
+                className="relative flex min-h-[35vh] lg:min-h-[85vh] bg-center bg-cover top-3 items-center justify-center text-center"
                 style={{backgroundImage: `url(${ServiceBanner})`}}>
                 <div className="absolute inset-0 bg-black/10 "></div>
 
                 <div className="relative z-10 px-4 max-w-2xl text-white">
-                    <h1 className="text-4xl lg:text-5xl font-extrabold mb-4">
+                    <h1 className="text-2xl lg:text-5xl font-extrabold mb-4">
                         Signature Skin &amp; Aesthetic Treatments
                     </h1>
                     <p className="text-sm uppercase tracking-widest text-primary font-semibold mb-3">
@@ -101,7 +101,7 @@ export default function Services() {
 
 
             {/* ===== Intro Section (optional hero blurb) ===== */}
-            <section className="py-20">
+            <section className="py-10">
                 <div className="mx-2 sm:mx-10  px-4 grid lg:grid-cols-2 gap-10 items-center">
                     <img src={spLeft} alt="Facial Surgery" className="rounded-xl shadow-lg"/>
                     <div>
@@ -113,7 +113,7 @@ export default function Services() {
                         </p>
                         <div className="flex flex-col sm:flex-row sm:items-center gap-6">
                             <img src={spRight} alt="Extra"
-                                 className="w-full h-90 md:w-[50%] md:h-120 lg:w-70 lg:h-55 rounded-lg shadow"/>
+                                 className="w-full h-120 md:w-[50%] md:h-120 lg:w-60 lg:h-62 rounded-lg shadow"/>
                             <div>
                                 <h4 className="text-xl font-semibold mb-2">Protect & Perfect</h4>
                                 <p className="text-gray-600">
@@ -126,7 +126,7 @@ export default function Services() {
             </section>
 
             <section id="services-list" className="py-20 bg-gray-50">
-                <div className="mx-2 sm:mx-10 px-4 space-y-20">
+                <div className="mx-2 sm:mx-10 px-4 space-y-15">
 
                     {services.map((s, i) => (
                         <div
@@ -134,7 +134,7 @@ export default function Services() {
                             key={s.title}
                             className={`
                                 relative isolate grid lg:grid-cols-2 gap-10 items-center cursor-pointer
-                                rounded-3xl p-6 lg:p-10 hover:shadow-md hover:scale-[1.01] transition duration-500
+                                rounded-lg p-3 lg:p-10 hover:shadow-md hover:scale-[1.01] transition duration-500
                                 ${i % 2 ? 'bg-white' : 'bg-primary-background lg:[&>*]:order-last'}
                                 shadow-sm group scroll-mt-25
                               `}

@@ -35,10 +35,10 @@ export default function Testimonials() {
                     {testimonials.map(({ quote, name, city }) => (
                         <div
                             key={name}
-                            className="relative p-8 rounded-3xl
+                            className="relative p-8 rounded-md
                                 bg-white/85
-                                backdrop-blur-lg shadow-lg border border-white/60
-                                flex flex-col transition-all duration-300"
+                                backdrop-blur-lg shadow-md border border-gray-300
+                                flex flex-col hover:shadow-xl hover:scale-102 transition-all duration-500"
                         >
                             {/* Decorative Quote Icon */}
                             <svg
